@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include <string.h>
+#include <time.h>
 #include "cfg80211.h" //radiotap parser
 #include "ieee80211_radiotap.h"
 #include "endian_converter.h"
@@ -69,6 +70,9 @@ typedef struct MCS_radiotap_header rtap_mcs;
 struct arguments{
 	pcap_dumper_t *dumper;
 	float airtime;
+	int duration; //duration to capture
+	time_t start; //time to start capturing
+	pcap_t *handler;
 };
 typedef struct arguments arguments;
 
@@ -83,9 +87,11 @@ float calculate_data_rate(uint8_t mcs, uint8_t bandwidth, uint8_t short_gi);
 
 int main(int argc, char *argv[]){
 
+	arguments args = {.dumper = NULL, .airtime = 0, .duration = 0, .start = 0, .handler = NULL};
 	char *dev = argv[1];
 	char *filter_exp = argv[2];
-	char *file_save = argv[3];
+	args.duration = atoi(argv[3]);
+	char *file_save = argv[4];
 	char errbuf[PCAP_ERRBUF_SIZE]; //save error message when opening a device
 	pcap_t *handler;
 
@@ -93,9 +99,10 @@ int main(int argc, char *argv[]){
 	handler = pcap_open_live(dev, BUFSIZ, 0, 0, errbuf);
 // 	handler = pcap_open_offline("/home/sea/tmp/airtime.pcap", errbuf);
 	if (handler == NULL) {
-		printf("err: %s\n", errbuf);
+		fprintf(stderr,"err: %s\n", errbuf);
 		return 1;
 	}
+	args.handler = handler;
 
 	//set filter
 	struct bpf_program fp;
@@ -112,19 +119,19 @@ int main(int argc, char *argv[]){
 	}
 
 	//open file to write packets
-	pcap_dumper_t *dumper = pcap_dump_open(handler, file_save);
+	args.dumper = pcap_dump_open(handler, file_save);
 
-		
-	arguments args = {.dumper = NULL, .airtime = 0};
-	args.dumper = dumper;
+	//start time
+	args.start = time(0);
+
 	//loop through packets
-	int tmp = pcap_loop(handler, 10, got_packet, (u_char*)&args);
-	//int tmp = pcap_loop(handler, 0, got_packet, NULL);
+	int tmp = pcap_loop(handler, 0, got_packet, (u_char*)&args);
 
-	pcap_dump_close(dumper);
+	pcap_dump_close(args.dumper);
 	pcap_close(handler);
 
-	printf("final airtime: %f\n", args.airtime);
+	fprintf(stderr,"final airtime: %f\n", args.airtime);
+	printf("%f\n", args.airtime);
 
 	return 0;
 }
@@ -140,10 +147,10 @@ void got_packet(u_char *argv, const struct pcap_pkthdr *header, const u_char *pa
 	u_int16_t rtap_hdr_len = le2local16(hdr->it_len);
 
 	
-	printf("time: %ld =======================================\n", header->ts.tv_sec);
-	printf("len: %u\n", header->len);
-	printf("present bits: %u\n", hdr->it_present);
-	printf("rtap header length: %u\n", rtap_hdr_len);
+	fprintf(stderr,"time: %ld =======================================\n", header->ts.tv_sec);
+	fprintf(stderr,"len: %u\n", header->len);
+	fprintf(stderr,"present bits: %u\n", hdr->it_present);
+	fprintf(stderr,"rtap header length: %u\n", rtap_hdr_len);
 
 	float rate = 0;
 	rtap_mcs *mcsInfo = NULL;
@@ -170,8 +177,8 @@ void got_packet(u_char *argv, const struct pcap_pkthdr *header, const u_char *pa
 		if (this_arg_index == IEEE80211_RADIOTAP_RATE){
 			rate = *(iter.this_arg) * 0.5f;
 			
-			printf("rate -------------------\n");
-			printf("rate: %f\n", rate);
+			fprintf(stderr,"rate -------------------\n");
+			fprintf(stderr,"rate: %f\n", rate);
 			
 		}
 		else if (this_arg_index == IEEE80211_RADIOTAP_CHANNEL){
@@ -179,15 +186,15 @@ void got_packet(u_char *argv, const struct pcap_pkthdr *header, const u_char *pa
 			chanInfo = (rtap_chan*)(iter.this_arg);
 			//convert to local endian
 			u_int16_t frequency = le2local16(chanInfo->frequency);
-			u_int16_t flags = le2local16(chanInfo->flags);
+			u_int16_t chan_flags = le2local16(chanInfo->flags);
 
-			pre.cck = get_sub_value(flags, IEEE80211_CHAN_CCK);
-			pre.ofdm = get_sub_value(flags, IEEE80211_CHAN_OFDM);
+			pre.cck = get_sub_value(chan_flags, IEEE80211_CHAN_CCK);
+			pre.ofdm = get_sub_value(chan_flags, IEEE80211_CHAN_OFDM);
 			
-			printf("channel info ----------------------\n");
-			printf("frequency: %u\n", frequency);
-			printf("CCK: %u\n", pre.cck);
-			printf("OFDM: %u\n", pre.ofdm);
+			fprintf(stderr,"channel info ----------------------\n");
+			fprintf(stderr,"frequency: %u\n", frequency);
+			fprintf(stderr,"CCK: %u\n", pre.cck);
+			fprintf(stderr,"OFDM: %u\n", pre.ofdm);
 			
 		}
 		else if (this_arg_index == IEEE80211_RADIOTAP_MCS){
@@ -198,11 +205,11 @@ void got_packet(u_char *argv, const struct pcap_pkthdr *header, const u_char *pa
 			rate = calculate_data_rate(mcsInfo->mcs, bandwidth, short_gi);
 			pre.mcs_present = 1;
 		
-			printf("mcs info -----------------------\n");
-			printf("mcs: %u\n", mcsInfo->mcs);
-			printf("short GI: %u\n", short_gi);
-			printf("bandwidth: %u\n", bandwidth);
-			printf("rate: %f\n", rate);
+			fprintf(stderr,"mcs info -----------------------\n");
+			fprintf(stderr,"mcs: %u\n", mcsInfo->mcs);
+			fprintf(stderr,"short GI: %u\n", short_gi);
+			fprintf(stderr,"bandwidth: %u\n", bandwidth);
+			fprintf(stderr,"rate: %f\n", rate);
 			
 		}
 		else if (this_arg_index == IEEE80211_RADIOTAP_FLAGS){
@@ -210,14 +217,14 @@ void got_packet(u_char *argv, const struct pcap_pkthdr *header, const u_char *pa
 			flags = *(iter.this_arg);
 			pre.short_preamble = get_sub_value(flags, IEEE80211_RADIOTAP_F_SHORTPRE);
 			
-			printf("flags info -----------------------\n");
-			printf("short preamble: %u\n", pre.short_preamble);
+			fprintf(stderr,"flags info -----------------------\n");
+			fprintf(stderr,"short preamble: %u\n", pre.short_preamble);
 			
 		}
 	}
 
 	if (ret != -ENOENT){
-		printf("max_length error %d\n", ret);
+		fprintf(stderr,"max_length error %d\n", ret);
 		return;
 	}
 
@@ -245,14 +252,19 @@ void got_packet(u_char *argv, const struct pcap_pkthdr *header, const u_char *pa
 		// only to debug
 		preamble = 0;
 	
-	printf("preamble length -------------------\n");
-	printf("preamble length: %d\n", preamble);
+	fprintf(stderr,"preamble length -------------------\n");
+	fprintf(stderr,"preamble length: %d\n", preamble);
 	
 	
 	uint32_t pkt_length = header->len - rtap_hdr_len;
 	args->airtime += pkt_length * 8 / rate;
 
-	printf("airtime: %f\n", args->airtime);
+	fprintf(stderr,"airtime: %f\n", args->airtime);
+
+	//
+	time_t now = time(0);
+	if (now - args->start >= args->duration)
+		pcap_breakloop(args->handler);
 
 }
 
@@ -274,7 +286,7 @@ float calculate_data_rate(uint8_t mcs, uint8_t bandwidth, uint8_t short_gi){
 		bandwidth < 0 || bandwidth > 1 || 
 		short_gi < 0 || short_gi > 1) 
 	{
-		printf("invalid arguments calculate_data_rate\n");
+		fprintf(stderr,"invalid arguments calculate_data_rate\n");
 		exit(1);
 	}
 	float rates[] = {6.5, 7.2, 13.5, 15, 

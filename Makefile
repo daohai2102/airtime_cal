@@ -8,7 +8,7 @@ PKG_RELEASE:=1
 
 # Source settings (i.e. where to find the source codes)
 # This is a custom variable, used below
-SOURCE_DIR:=/home/sea/mypackages/networking/airtime_cal/src
+SOURCE_DIR:=./src
 
 include $(INCLUDE_DIR)/package.mk
 
