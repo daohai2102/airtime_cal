@@ -1,8 +1,8 @@
-objects = airtime_cal.o radiotap.o endian_converter.o
+objects = airtime_cal.o radiotap.o endian_converter.o duration_calculation.o packet_analyzer.o
 # Global target; when 'make' is run without arguments, this is what it should do
 
 airtime_cal: $(objects)
-	$(CC) -o airtime_cal $(objects) -lpcap
+	$(CC) -o airtime_cal $(objects) -lpcap -lm
 
 airtime_cal.o: cfg80211.h ieee80211_radiotap.h  
 
@@ -10,6 +10,10 @@ radiotap.o: le_byteshift.h cfg80211.h ieee80211_radiotap.h
 
 endian_converter.o: endian_converter.h
 
+duration_calculation.o: ieee80211.h
+
+packet_analyzer.o:  packet_analyzer.h ieee80211_radiotap.h endian_converter.h cfg80211.h ieee80211.h
+ 
 # These variables hold the name of the compilation tool, the compilation flags and the link flags
 # We make use of these variables in the package manifest
 #CC = gcc

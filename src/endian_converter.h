@@ -1,20 +1,26 @@
 #ifndef _SWAP_ENDIAN_H
 #define _SWAP_ENDIAN_H
 
-#include <stdint.h>
+#include <pcap.h>
 
-uint16_t swap_endian_16(uint16_t value);
+u_int16_t swap_endian_16(u_int16_t value);
 
-uint32_t swap_endian_32(uint32_t value);
+u_int32_t swap_endian_32(u_int32_t value);
 
-uint8_t is_little_endian();
+u_int64_t swap_endian_64(u_int64_t value);
 
-uint16_t be2local16(uint16_t value);
+u_int8_t is_little_endian();
 
-uint16_t le2local16(uint16_t value);
+u_int16_t be2local16(u_int16_t value);
 
-uint32_t be2local32(uint32_t value);
+u_int16_t le2local16(u_int16_t value);
 
-uint32_t le2local32(uint32_t value);
+u_int32_t be2local32(u_int32_t value);
+
+u_int32_t le2local32(u_int32_t value);
+
+u_int64_t le2local64(u_int64_t value);
+
+u_int64_t be2local64(u_int64_t value);
 
 #endif

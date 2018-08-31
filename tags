@@ -1,0 +1,385 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+A_MPDU_radiotap_header	src/packet_analyzer.h	/^struct A_MPDU_radiotap_header {$/;"	s
+Build	Makefile	/^define Build\/Compile$/;"	m
+Build	Makefile	/^define Build\/Prepare$/;"	m
+GFP_ATOMIC	src/types.h	/^	GFP_ATOMIC,$/;"	e	enum:__anon1
+GFP_KERNEL	src/types.h	/^	GFP_KERNEL,$/;"	e	enum:__anon1
+IEEE80211RADIOTAP_H	src/ieee80211_radiotap.h	36;"	d
+IEEE80211_CHAN_2GHZ	src/ieee80211_radiotap.h	229;"	d
+IEEE80211_CHAN_5GHZ	src/ieee80211_radiotap.h	230;"	d
+IEEE80211_CHAN_CCK	src/ieee80211_radiotap.h	227;"	d
+IEEE80211_CHAN_DYN	src/ieee80211_radiotap.h	232;"	d
+IEEE80211_CHAN_GFSK	src/ieee80211_radiotap.h	233;"	d
+IEEE80211_CHAN_GSM	src/ieee80211_radiotap.h	234;"	d
+IEEE80211_CHAN_HALF	src/ieee80211_radiotap.h	236;"	d
+IEEE80211_CHAN_OFDM	src/ieee80211_radiotap.h	228;"	d
+IEEE80211_CHAN_PASSIVE	src/ieee80211_radiotap.h	231;"	d
+IEEE80211_CHAN_QUARTER	src/ieee80211_radiotap.h	237;"	d
+IEEE80211_CHAN_STURBO	src/ieee80211_radiotap.h	235;"	d
+IEEE80211_CHAN_TURBO	src/ieee80211_radiotap.h	226;"	d
+IEEE80211_RADIOTAP_AMPDU_DELIM_CRC_ERR	src/ieee80211_radiotap.h	299;"	d
+IEEE80211_RADIOTAP_AMPDU_DELIM_CRC_KNOWN	src/ieee80211_radiotap.h	300;"	d
+IEEE80211_RADIOTAP_AMPDU_IS_LAST	src/ieee80211_radiotap.h	298;"	d
+IEEE80211_RADIOTAP_AMPDU_IS_ZEROLEN	src/ieee80211_radiotap.h	296;"	d
+IEEE80211_RADIOTAP_AMPDU_LAST_KNOWN	src/ieee80211_radiotap.h	297;"	d
+IEEE80211_RADIOTAP_AMPDU_REPORT_ZEROLEN	src/ieee80211_radiotap.h	295;"	d
+IEEE80211_RADIOTAP_AMPDU_STATUS	src/ieee80211_radiotap.h	/^	IEEE80211_RADIOTAP_AMPDU_STATUS = 20,$/;"	e	enum:ieee80211_radiotap_type
+IEEE80211_RADIOTAP_ANTENNA	src/ieee80211_radiotap.h	/^	IEEE80211_RADIOTAP_ANTENNA = 11,$/;"	e	enum:ieee80211_radiotap_type
+IEEE80211_RADIOTAP_CHANNEL	src/ieee80211_radiotap.h	/^	IEEE80211_RADIOTAP_CHANNEL = 3,$/;"	e	enum:ieee80211_radiotap_type
+IEEE80211_RADIOTAP_CODING_LDPC_USER0	src/ieee80211_radiotap.h	320;"	d
+IEEE80211_RADIOTAP_CODING_LDPC_USER1	src/ieee80211_radiotap.h	321;"	d
+IEEE80211_RADIOTAP_CODING_LDPC_USER2	src/ieee80211_radiotap.h	322;"	d
+IEEE80211_RADIOTAP_CODING_LDPC_USER3	src/ieee80211_radiotap.h	323;"	d
+IEEE80211_RADIOTAP_DATA_RETRIES	src/ieee80211_radiotap.h	/^	IEEE80211_RADIOTAP_DATA_RETRIES = 17,$/;"	e	enum:ieee80211_radiotap_type
+IEEE80211_RADIOTAP_DBM_ANTNOISE	src/ieee80211_radiotap.h	/^	IEEE80211_RADIOTAP_DBM_ANTNOISE = 6,$/;"	e	enum:ieee80211_radiotap_type
+IEEE80211_RADIOTAP_DBM_ANTSIGNAL	src/ieee80211_radiotap.h	/^	IEEE80211_RADIOTAP_DBM_ANTSIGNAL = 5,$/;"	e	enum:ieee80211_radiotap_type
+IEEE80211_RADIOTAP_DBM_TX_POWER	src/ieee80211_radiotap.h	/^	IEEE80211_RADIOTAP_DBM_TX_POWER = 10,$/;"	e	enum:ieee80211_radiotap_type
+IEEE80211_RADIOTAP_DB_ANTNOISE	src/ieee80211_radiotap.h	/^	IEEE80211_RADIOTAP_DB_ANTNOISE = 13,$/;"	e	enum:ieee80211_radiotap_type
+IEEE80211_RADIOTAP_DB_ANTSIGNAL	src/ieee80211_radiotap.h	/^	IEEE80211_RADIOTAP_DB_ANTSIGNAL = 12,$/;"	e	enum:ieee80211_radiotap_type
+IEEE80211_RADIOTAP_DB_TX_ATTENUATION	src/ieee80211_radiotap.h	/^	IEEE80211_RADIOTAP_DB_TX_ATTENUATION = 9,$/;"	e	enum:ieee80211_radiotap_type
+IEEE80211_RADIOTAP_EXT	src/ieee80211_radiotap.h	/^	IEEE80211_RADIOTAP_EXT = 31$/;"	e	enum:ieee80211_radiotap_type
+IEEE80211_RADIOTAP_FHSS	src/ieee80211_radiotap.h	/^	IEEE80211_RADIOTAP_FHSS = 4,$/;"	e	enum:ieee80211_radiotap_type
+IEEE80211_RADIOTAP_FLAGS	src/ieee80211_radiotap.h	/^	IEEE80211_RADIOTAP_FLAGS = 1,$/;"	e	enum:ieee80211_radiotap_type
+IEEE80211_RADIOTAP_F_BADFCS	src/ieee80211_radiotap.h	258;"	d
+IEEE80211_RADIOTAP_F_CFP	src/ieee80211_radiotap.h	240;"	d
+IEEE80211_RADIOTAP_F_DATAPAD	src/ieee80211_radiotap.h	254;"	d
+IEEE80211_RADIOTAP_F_FCS	src/ieee80211_radiotap.h	253;"	d
+IEEE80211_RADIOTAP_F_FRAG	src/ieee80211_radiotap.h	250;"	d
+IEEE80211_RADIOTAP_F_RX_BADPLCP	src/ieee80211_radiotap.h	261;"	d
+IEEE80211_RADIOTAP_F_SHORTPRE	src/ieee80211_radiotap.h	243;"	d
+IEEE80211_RADIOTAP_F_TX_CTS	src/ieee80211_radiotap.h	266;"	d
+IEEE80211_RADIOTAP_F_TX_FAIL	src/ieee80211_radiotap.h	264;"	d
+IEEE80211_RADIOTAP_F_TX_NOACK	src/ieee80211_radiotap.h	268;"	d
+IEEE80211_RADIOTAP_F_TX_RTS	src/ieee80211_radiotap.h	267;"	d
+IEEE80211_RADIOTAP_F_WEP	src/ieee80211_radiotap.h	247;"	d
+IEEE80211_RADIOTAP_LOCK_QUALITY	src/ieee80211_radiotap.h	/^	IEEE80211_RADIOTAP_LOCK_QUALITY = 7,$/;"	e	enum:ieee80211_radiotap_type
+IEEE80211_RADIOTAP_MCS	src/ieee80211_radiotap.h	/^	IEEE80211_RADIOTAP_MCS = 19,$/;"	e	enum:ieee80211_radiotap_type
+IEEE80211_RADIOTAP_MCS_BW_20	src/ieee80211_radiotap.h	280;"	d
+IEEE80211_RADIOTAP_MCS_BW_20L	src/ieee80211_radiotap.h	282;"	d
+IEEE80211_RADIOTAP_MCS_BW_20U	src/ieee80211_radiotap.h	283;"	d
+IEEE80211_RADIOTAP_MCS_BW_40	src/ieee80211_radiotap.h	281;"	d
+IEEE80211_RADIOTAP_MCS_BW_MASK	src/ieee80211_radiotap.h	279;"	d
+IEEE80211_RADIOTAP_MCS_FEC_LDPC	src/ieee80211_radiotap.h	286;"	d
+IEEE80211_RADIOTAP_MCS_FMT_GF	src/ieee80211_radiotap.h	285;"	d
+IEEE80211_RADIOTAP_MCS_HAVE_BW	src/ieee80211_radiotap.h	272;"	d
+IEEE80211_RADIOTAP_MCS_HAVE_FEC	src/ieee80211_radiotap.h	276;"	d
+IEEE80211_RADIOTAP_MCS_HAVE_FMT	src/ieee80211_radiotap.h	275;"	d
+IEEE80211_RADIOTAP_MCS_HAVE_GI	src/ieee80211_radiotap.h	274;"	d
+IEEE80211_RADIOTAP_MCS_HAVE_MCS	src/ieee80211_radiotap.h	273;"	d
+IEEE80211_RADIOTAP_MCS_HAVE_STBC	src/ieee80211_radiotap.h	277;"	d
+IEEE80211_RADIOTAP_MCS_SGI	src/ieee80211_radiotap.h	284;"	d
+IEEE80211_RADIOTAP_MCS_STBC_1	src/ieee80211_radiotap.h	288;"	d
+IEEE80211_RADIOTAP_MCS_STBC_2	src/ieee80211_radiotap.h	289;"	d
+IEEE80211_RADIOTAP_MCS_STBC_3	src/ieee80211_radiotap.h	290;"	d
+IEEE80211_RADIOTAP_MCS_STBC_MASK	src/ieee80211_radiotap.h	287;"	d
+IEEE80211_RADIOTAP_MCS_STBC_SHIFT	src/ieee80211_radiotap.h	292;"	d
+IEEE80211_RADIOTAP_RADIOTAP_NAMESPACE	src/ieee80211_radiotap.h	/^	IEEE80211_RADIOTAP_RADIOTAP_NAMESPACE = 29,$/;"	e	enum:ieee80211_radiotap_type
+IEEE80211_RADIOTAP_RATE	src/ieee80211_radiotap.h	/^	IEEE80211_RADIOTAP_RATE = 2,$/;"	e	enum:ieee80211_radiotap_type
+IEEE80211_RADIOTAP_RTS_RETRIES	src/ieee80211_radiotap.h	/^	IEEE80211_RADIOTAP_RTS_RETRIES = 16,$/;"	e	enum:ieee80211_radiotap_type
+IEEE80211_RADIOTAP_RX_FLAGS	src/ieee80211_radiotap.h	/^	IEEE80211_RADIOTAP_RX_FLAGS = 14,$/;"	e	enum:ieee80211_radiotap_type
+IEEE80211_RADIOTAP_TSFT	src/ieee80211_radiotap.h	/^	IEEE80211_RADIOTAP_TSFT = 0,$/;"	e	enum:ieee80211_radiotap_type
+IEEE80211_RADIOTAP_TX_ATTENUATION	src/ieee80211_radiotap.h	/^	IEEE80211_RADIOTAP_TX_ATTENUATION = 8,$/;"	e	enum:ieee80211_radiotap_type
+IEEE80211_RADIOTAP_TX_FLAGS	src/ieee80211_radiotap.h	/^	IEEE80211_RADIOTAP_TX_FLAGS = 15,$/;"	e	enum:ieee80211_radiotap_type
+IEEE80211_RADIOTAP_VENDOR_NAMESPACE	src/ieee80211_radiotap.h	/^	IEEE80211_RADIOTAP_VENDOR_NAMESPACE = 30,$/;"	e	enum:ieee80211_radiotap_type
+IEEE80211_RADIOTAP_VHT	src/ieee80211_radiotap.h	/^	IEEE80211_RADIOTAP_VHT = 21,$/;"	e	enum:ieee80211_radiotap_type
+IEEE80211_RADIOTAP_VHT_FLAG_BEAMFORMED	src/ieee80211_radiotap.h	318;"	d
+IEEE80211_RADIOTAP_VHT_FLAG_LDPC_EXTRA_OFDM_SYM	src/ieee80211_radiotap.h	317;"	d
+IEEE80211_RADIOTAP_VHT_FLAG_SGI	src/ieee80211_radiotap.h	315;"	d
+IEEE80211_RADIOTAP_VHT_FLAG_SGI_NSYM_M10_9	src/ieee80211_radiotap.h	316;"	d
+IEEE80211_RADIOTAP_VHT_FLAG_STBC	src/ieee80211_radiotap.h	313;"	d
+IEEE80211_RADIOTAP_VHT_FLAG_TXOP_PS_NA	src/ieee80211_radiotap.h	314;"	d
+IEEE80211_RADIOTAP_VHT_KNOWN_BANDWIDTH	src/ieee80211_radiotap.h	309;"	d
+IEEE80211_RADIOTAP_VHT_KNOWN_BEAMFORMED	src/ieee80211_radiotap.h	308;"	d
+IEEE80211_RADIOTAP_VHT_KNOWN_GI	src/ieee80211_radiotap.h	305;"	d
+IEEE80211_RADIOTAP_VHT_KNOWN_GROUP_ID	src/ieee80211_radiotap.h	310;"	d
+IEEE80211_RADIOTAP_VHT_KNOWN_LDPC_EXTRA_OFDM_SYM	src/ieee80211_radiotap.h	307;"	d
+IEEE80211_RADIOTAP_VHT_KNOWN_PARTIAL_AID	src/ieee80211_radiotap.h	311;"	d
+IEEE80211_RADIOTAP_VHT_KNOWN_SGI_NSYM_DIS	src/ieee80211_radiotap.h	306;"	d
+IEEE80211_RADIOTAP_VHT_KNOWN_STBC	src/ieee80211_radiotap.h	303;"	d
+IEEE80211_RADIOTAP_VHT_KNOWN_TXOP_PS_NA	src/ieee80211_radiotap.h	304;"	d
+MAXUINT64	src/packet_analyzer.c	10;"	d	file:
+MAX_MCS_INDEX	src/duration_calculation.c	4;"	d	file:
+MAX_MCS_VHT_INDEX	src/duration_calculation.c	50;"	d	file:
+MCS_radiotap_header	src/packet_analyzer.h	/^struct MCS_radiotap_header {$/;"	s
+PHDR_802_11_BANDWIDTH_20_MHZ	src/duration_calculation.c	5;"	d	file:
+PHDR_802_11_BANDWIDTH_40_MHZ	src/duration_calculation.c	6;"	d	file:
+PHDR_802_11_PHY_11A	src/ieee80211.h	15;"	d
+PHDR_802_11_PHY_11AC	src/ieee80211.h	18;"	d
+PHDR_802_11_PHY_11AD	src/ieee80211.h	19;"	d
+PHDR_802_11_PHY_11B	src/ieee80211.h	14;"	d
+PHDR_802_11_PHY_11G	src/ieee80211.h	16;"	d
+PHDR_802_11_PHY_11N	src/ieee80211.h	17;"	d
+PHDR_802_11_PHY_11_DSSS	src/ieee80211.h	13;"	d
+PHDR_802_11_PHY_11_FHSS	src/ieee80211.h	11;"	d
+PHDR_802_11_PHY_11_IR	src/ieee80211.h	12;"	d
+PHDR_802_11_PHY_UNKNOWN	src/ieee80211.h	10;"	d
+PKG_NAME	Makefile	/^PKG_NAME:=airtime_cal$/;"	m
+PKG_RELEASE	Makefile	/^PKG_RELEASE:=1$/;"	m
+PKG_VERSION	Makefile	/^PKG_VERSION:=1.0$/;"	m
+PKTHDR_RADIOTAP_VERSION	src/ieee80211_radiotap.h	41;"	d
+Package	Makefile	/^define Package\/airtime_cal$/;"	m
+Package	Makefile	/^define Package\/airtime_cal\/description$/;"	m
+Package	Makefile	/^define Package\/airtime_cal\/install$/;"	m
+SOURCE_DIR	Makefile	/^SOURCE_DIR:=.\/src$/;"	m
+Settings	.ycm_extra_conf.py	/^def Settings( **kwargs ):$/;"	f
+_IEEE_802_11_H	src/ieee80211.h	2;"	d
+_PACKET_ANALYZER_H	src/packet_analyzer.h	2;"	d
+_SWAP_ENDIAN_H	src/endian_converter.h	2;"	d
+_TOOLS_LE_BYTESHIFT_H	src/le_byteshift.h	3;"	d
+_TOOLS_LINUX_TYPES_H_	src/types.h	3;"	d
+__GFP_HIGH	src/types.h	/^	__GFP_HIGH$/;"	e	enum:__anon1
+__GFP_HIGHMEM	src/types.h	/^	__GFP_HIGHMEM,$/;"	e	enum:__anon1
+__SANE_USERSPACE_TYPES__	src/types.h	9;"	d
+__aligned_u64	src/types.h	66;"	d
+__be16	src/types.h	/^typedef __u16 __bitwise __be16;$/;"	t
+__be32	src/types.h	/^typedef __u32 __bitwise __be32;$/;"	t
+__be64	src/types.h	/^typedef __u64 __bitwise __be64;$/;"	t
+__bitwise	src/types.h	47;"	d
+__bitwise__	src/types.h	43;"	d
+__bitwise__	src/types.h	45;"	d
+__cold	src/types.h	52;"	d
+__force	src/types.h	49;"	d
+__get_unaligned_le16	src/le_byteshift.h	/^static inline uint16_t __get_unaligned_le16(const uint8_t *p)$/;"	f
+__get_unaligned_le32	src/le_byteshift.h	/^static inline uint32_t __get_unaligned_le32(const uint8_t *p)$/;"	f
+__get_unaligned_le64	src/le_byteshift.h	/^static inline uint64_t __get_unaligned_le64(const uint8_t *p)$/;"	f
+__le16	src/types.h	/^typedef __u16 __bitwise __le16;$/;"	t
+__le32	src/types.h	/^typedef __u32 __bitwise __le32;$/;"	t
+__le64	src/types.h	/^typedef __u64 __bitwise __le64;$/;"	t
+__must_check	src/types.h	51;"	d
+__packed	src/ieee80211_radiotap.h	/^} __packed;$/;"	v	typeref:struct:ieee80211_radiotap_header
+__put_unaligned_le16	src/le_byteshift.h	/^static inline void __put_unaligned_le16(uint16_t val, uint8_t *p)$/;"	f
+__put_unaligned_le32	src/le_byteshift.h	/^static inline void __put_unaligned_le32(uint32_t val, uint8_t *p)$/;"	f
+__put_unaligned_le64	src/le_byteshift.h	/^static inline void __put_unaligned_le64(uint64_t val, uint8_t *p)$/;"	f
+__user	src/types.h	50;"	d
+_arg	src/cfg80211.h	/^	unsigned char *_arg, *_next_ns_data;$/;"	m	struct:ieee80211_radiotap_iterator
+_arg_index	src/cfg80211.h	/^	int _arg_index;$/;"	m	struct:ieee80211_radiotap_iterator
+_bitmap_shifter	src/cfg80211.h	/^	uint32_t _bitmap_shifter;$/;"	m	struct:ieee80211_radiotap_iterator
+_max_length	src/cfg80211.h	/^	int _max_length;$/;"	m	struct:ieee80211_radiotap_iterator
+_next_bitmap	src/cfg80211.h	/^	__le32 *_next_bitmap;$/;"	m	struct:ieee80211_radiotap_iterator
+_next_ns_data	src/cfg80211.h	/^	unsigned char *_arg, *_next_ns_data;$/;"	m	struct:ieee80211_radiotap_iterator
+_reset_on_ext	src/cfg80211.h	/^	int _reset_on_ext;$/;"	m	struct:ieee80211_radiotap_iterator
+_rtheader	src/cfg80211.h	/^	struct ieee80211_radiotap_header *_rtheader;$/;"	m	struct:ieee80211_radiotap_iterator	typeref:struct:ieee80211_radiotap_iterator::ieee80211_radiotap_header
+_vns	src/cfg80211.h	/^	const struct ieee80211_radiotap_vendor_namespaces *_vns;$/;"	m	struct:ieee80211_radiotap_iterator	typeref:struct:ieee80211_radiotap_iterator::ieee80211_radiotap_vendor_namespaces
+aggregate	src/ieee80211.h	/^  struct aggregate *aggregate; \/* if this frame is part of an aggregate, $/;"	m	struct:wlan_radio	typeref:struct:wlan_radio::aggregate
+aggregate	src/ieee80211.h	/^struct aggregate {$/;"	s
+aggregate_flags	src/ieee80211.h	/^    u_int16_t  aggregate_flags;             \/* A-MPDU flags *\/$/;"	m	struct:ieee_802_11_phdr
+aggregate_id	src/ieee80211.h	/^    u_int32_t  aggregate_id;                \/* ID for A-MPDU reassembly *\/$/;"	m	struct:ieee_802_11_phdr
+airtime	src/packet_analyzer.h	/^	float airtime;$/;"	m	struct:arguments
+align	src/cfg80211.h	/^	uint8_t align:4, size:4;$/;"	m	struct:radiotap_align_size
+align_size	src/cfg80211.h	/^	const struct radiotap_align_size *align_size;$/;"	m	struct:ieee80211_radiotap_namespace	typeref:struct:ieee80211_radiotap_namespace::radiotap_align_size
+arguments	src/packet_analyzer.h	/^struct arguments{$/;"	s
+atomic_t	src/types.h	/^} atomic_t;$/;"	t	typeref:struct:__anon2
+bandwidth	src/ieee80211.h	/^    u_int8_t   bandwidth;      \/* Bandwidth = 20 MHz, 40 MHz, etc. *\/$/;"	m	struct:ieee_802_11ac
+bandwidth	src/ieee80211.h	/^    unsigned int    bandwidth;      \/* Bandwidth = 20 MHz, 40 MHz, etc. *\/$/;"	m	struct:ieee_802_11n
+be2local16	src/endian_converter.c	/^u_int16_t be2local16(u_int16_t value){$/;"	f
+be2local32	src/endian_converter.c	/^u_int32_t be2local32(u_int32_t value){$/;"	f
+be2local64	src/endian_converter.c	/^u_int64_t be2local64(u_int64_t value){$/;"	f
+beamformed	src/ieee80211.h	/^    unsigned int    beamformed:1;$/;"	m	struct:ieee_802_11ac
+calculate_11ac_duration	src/duration_calculation.c	/^static unsigned int calculate_11ac_duration(unsigned int frame_length, float data_rate)$/;"	f	file:
+calculate_11n_duration	src/duration_calculation.c	/^static unsigned int calculate_11n_duration(unsigned int frame_length,$/;"	f	file:
+calculate_duration	src/duration_calculation.c	/^unsigned int calculate_duration(struct ieee_802_11_phdr *phdr, $/;"	f
+channel	src/ieee80211.h	/^    u_int16_t  channel;                     \/* Channel number *\/$/;"	m	struct:ieee_802_11_phdr
+channel_radiotap_header	src/packet_analyzer.h	/^struct channel_radiotap_header {$/;"	s
+channel_type	src/ieee80211.h	/^    unsigned int    channel_type:2;$/;"	m	struct:ieee_802_11a
+coding_rate	src/duration_calculation.c	/^  const char *coding_rate;$/;"	m	struct:mcs_vht_info	file:
+counter	src/types.h	/^	int counter;$/;"	m	struct:__anon2
+current_aggregate	src/packet_analyzer.c	/^static u_int8_t current_aggregate = 0;$/;"	v	file:
+current_namespace	src/cfg80211.h	/^	const struct ieee80211_radiotap_namespace *current_namespace;$/;"	m	struct:ieee80211_radiotap_iterator	typeref:struct:ieee80211_radiotap_iterator::ieee80211_radiotap_namespace
+data_bits_per_symbol	src/duration_calculation.c	/^  float data_bits_per_symbol; \/* assuming 20MHz \/ 52 subcarriers *\/$/;"	m	struct:mcs_vht_info	file:
+data_rate	src/ieee80211.h	/^    u_int8_t  data_rate;                   \/* Data rate, in .5 Mb\/s units *\/$/;"	m	struct:ieee_802_11_phdr
+delimiter_crc	src/packet_analyzer.h	/^	u_int8_t delimiter_crc;$/;"	m	struct:A_MPDU_radiotap_header
+dumper	src/packet_analyzer.h	/^	pcap_dumper_t *dumper;$/;"	m	struct:arguments
+duration	src/ieee80211.h	/^  unsigned int duration; \/* total duration of data $/;"	m	struct:aggregate
+duration	src/packet_analyzer.h	/^	int duration; \/\/duration to capture$/;"	m	struct:arguments
+duration	src/packet_analyzer.h	/^	unsigned int duration;$/;"	m	struct:previous_frame_info
+end_tsf	src/ieee80211.h	/^  u_int64_t end_tsf;$/;"	m	struct:wlan_radio
+fcs_len	src/ieee80211.h	/^    int     fcs_len;          \/* Number of bytes of FCS - -1 means "unknown" *\/$/;"	m	struct:ieee_802_11_phdr
+fec	src/ieee80211.h	/^    u_int8_t   fec;            \/* Bit array of FEC per user: 0 = BCC, 1 = LDPC *\/$/;"	m	struct:ieee_802_11ac
+fec	src/ieee80211.h	/^    unsigned int    fec:1;          \/* FEC: 0 = BCC, 1 = LDPC *\/$/;"	m	struct:ieee_802_11n
+find_ns	src/radiotap.c	/^static void find_ns(struct ieee80211_radiotap_iterator *iterator,$/;"	f	file:
+first	src/types.h	/^	struct hlist_node *first;$/;"	m	struct:hlist_head	typeref:struct:hlist_head::hlist_node
+flags	src/packet_analyzer.h	/^	u_int16_t flags;		\/\/channel flags$/;"	m	struct:channel_radiotap_header
+flags	src/packet_analyzer.h	/^	u_int16_t flags;$/;"	m	struct:A_MPDU_radiotap_header
+flags	src/packet_analyzer.h	/^	u_int8_t flags;			\/\/MCS flags$/;"	m	struct:MCS_radiotap_header
+frequency	src/ieee80211.h	/^    u_int32_t  frequency;                   \/* Channel center frequency *\/$/;"	m	struct:ieee_802_11_phdr
+frequency	src/packet_analyzer.h	/^	u_int16_t frequency;	\/\/channel frequency$/;"	m	struct:channel_radiotap_header
+get_bit	src/packet_analyzer.c	/^u_int8_t get_bit(u_int32_t value, u_int8_t bit){$/;"	f
+get_sub_value	src/packet_analyzer.c	/^u_int8_t get_sub_value(u_int32_t value, u_int32_t mask){$/;"	f
+get_unaligned_le16	src/le_byteshift.h	/^static inline uint16_t get_unaligned_le16(const void *p)$/;"	f
+get_unaligned_le32	src/le_byteshift.h	/^static inline uint32_t get_unaligned_le32(const void *p)$/;"	f
+get_unaligned_le64	src/le_byteshift.h	/^static inline uint64_t get_unaligned_le64(const void *p)$/;"	f
+gfp_t	src/types.h	/^} gfp_t;$/;"	t	typeref:enum:__anon1
+got_packet	src/packet_analyzer.c	/^void got_packet(u_char *argv, const struct pcap_pkthdr *header, const u_char *packet){$/;"	f
+greenfield	src/ieee80211.h	/^    unsigned int    greenfield:1;   \/* True for greenfield, short for mixed *\/$/;"	m	struct:ieee_802_11n
+group_id	src/ieee80211.h	/^    u_int8_t   group_id;$/;"	m	struct:ieee_802_11ac
+handler	src/packet_analyzer.h	/^	pcap_t *handler;$/;"	m	struct:arguments
+has_aggregate_info	src/ieee80211.h	/^    unsigned int    has_aggregate_info:1;        \/* aggregate flags and ID *\/$/;"	m	struct:ieee_802_11_phdr
+has_bandwidth	src/ieee80211.h	/^    unsigned int    has_bandwidth:1;$/;"	m	struct:ieee_802_11ac
+has_bandwidth	src/ieee80211.h	/^    unsigned int    has_bandwidth:1;$/;"	m	struct:ieee_802_11n
+has_beamformed	src/ieee80211.h	/^    unsigned int    has_beamformed:1;$/;"	m	struct:ieee_802_11ac
+has_channel	src/ieee80211.h	/^    unsigned int    has_channel:1;$/;"	m	struct:ieee_802_11_phdr
+has_channel_type	src/ieee80211.h	/^    unsigned int    has_channel_type:1;$/;"	m	struct:ieee_802_11a
+has_data_rate	src/ieee80211.h	/^    unsigned int    has_data_rate:1;$/;"	m	struct:ieee_802_11_phdr
+has_fec	src/ieee80211.h	/^    unsigned int    has_fec:1;$/;"	m	struct:ieee_802_11ac
+has_fec	src/ieee80211.h	/^    unsigned int    has_fec:1;$/;"	m	struct:ieee_802_11n
+has_frequency	src/ieee80211.h	/^    unsigned int    has_frequency:1;$/;"	m	struct:ieee_802_11_phdr
+has_greenfield	src/ieee80211.h	/^    unsigned int    has_greenfield:1;$/;"	m	struct:ieee_802_11n
+has_group_id	src/ieee80211.h	/^    unsigned int    has_group_id:1;$/;"	m	struct:ieee_802_11ac
+has_hop_index	src/ieee80211.h	/^    unsigned int    has_hop_index:1;$/;"	m	struct:ieee_802_11_fhss
+has_hop_pattern	src/ieee80211.h	/^    unsigned int    has_hop_pattern:1;$/;"	m	struct:ieee_802_11_fhss
+has_hop_set	src/ieee80211.h	/^    unsigned int    has_hop_set:1;$/;"	m	struct:ieee_802_11_fhss
+has_ldpc_extra_ofdm_symbol	src/ieee80211.h	/^    unsigned int    has_ldpc_extra_ofdm_symbol:1;$/;"	m	struct:ieee_802_11ac
+has_mcs_index	src/ieee80211.h	/^	unsigned int    has_mcs_index:1;$/;"	m	struct:ieee_802_11ad
+has_mcs_index	src/ieee80211.h	/^    unsigned int    has_mcs_index:1;$/;"	m	struct:ieee_802_11n
+has_mode	src/ieee80211.h	/^    unsigned int    has_mode:1;$/;"	m	struct:ieee_802_11g
+has_ness	src/ieee80211.h	/^    unsigned int    has_ness:1;$/;"	m	struct:ieee_802_11n
+has_noise_dbm	src/ieee80211.h	/^    unsigned int    has_noise_dbm:1;$/;"	m	struct:ieee_802_11_phdr
+has_noise_percent	src/ieee80211.h	/^    unsigned int    has_noise_percent:1;$/;"	m	struct:ieee_802_11_phdr
+has_partial_aid	src/ieee80211.h	/^    unsigned int    has_partial_aid:1;$/;"	m	struct:ieee_802_11ac
+has_short_gi	src/ieee80211.h	/^    unsigned int    has_short_gi:1;$/;"	m	struct:ieee_802_11ac
+has_short_gi	src/ieee80211.h	/^    unsigned int    has_short_gi:1;$/;"	m	struct:ieee_802_11n
+has_short_gi_nsym_disambig	src/ieee80211.h	/^    unsigned int    has_short_gi_nsym_disambig:1;$/;"	m	struct:ieee_802_11ac
+has_short_preamble	src/ieee80211.h	/^    u_int8_t    has_short_preamble:1;$/;"	m	struct:ieee_802_11b
+has_short_preamble	src/ieee80211.h	/^    unsigned int    has_short_preamble:1;$/;"	m	struct:ieee_802_11g
+has_signal_dbm	src/ieee80211.h	/^    unsigned int    has_signal_dbm:1;$/;"	m	struct:ieee_802_11_phdr
+has_signal_percent	src/ieee80211.h	/^    unsigned int    has_signal_percent:1;$/;"	m	struct:ieee_802_11_phdr
+has_stbc	src/ieee80211.h	/^    unsigned int    has_stbc:1;$/;"	m	struct:ieee_802_11ac
+has_stbc_streams	src/ieee80211.h	/^    unsigned int    has_stbc_streams:1;$/;"	m	struct:ieee_802_11n
+has_tsf_timestamp	src/ieee80211.h	/^    unsigned int    has_tsf_timestamp:1;$/;"	m	struct:ieee_802_11_phdr
+has_tsf_timestamp	src/packet_analyzer.h	/^	u_int8_t has_tsf_timestamp:1;$/;"	m	struct:previous_frame_info
+has_turbo_type	src/ieee80211.h	/^    unsigned int    has_turbo_type:1;$/;"	m	struct:ieee_802_11a
+has_txop_ps_not_allowed	src/ieee80211.h	/^    unsigned int    has_txop_ps_not_allowed:1;$/;"	m	struct:ieee_802_11ac
+has_zero_length_psdu_type	src/ieee80211.h	/^    unsigned int    has_zero_length_psdu_type:1; \/* zero-length PSDU type *\/$/;"	m	struct:ieee_802_11_phdr
+hlist_head	src/types.h	/^struct hlist_head {$/;"	s
+hlist_node	src/types.h	/^struct hlist_node {$/;"	s
+hop_index	src/ieee80211.h	/^    u_int8_t   hop_index;      \/* Hop index *\/$/;"	m	struct:ieee_802_11_fhss
+hop_pattern	src/ieee80211.h	/^    u_int8_t   hop_pattern;    \/* Hop pattern *\/$/;"	m	struct:ieee_802_11_fhss
+hop_set	src/ieee80211.h	/^    u_int8_t   hop_set;        \/* Hop set *\/$/;"	m	struct:ieee_802_11_fhss
+ieee80211_ht_Dbps	src/duration_calculation.c	/^static const u_int16_t ieee80211_ht_Dbps[MAX_MCS_INDEX+1] = {$/;"	v	file:
+ieee80211_ht_Nes	src/duration_calculation.c	/^static const u_int8_t ieee80211_ht_Nes[MAX_MCS_INDEX+1] = {$/;"	v	file:
+ieee80211_ht_streams	src/duration_calculation.c	/^static const u_int8_t ieee80211_ht_streams[MAX_MCS_INDEX+1] = {$/;"	v	file:
+ieee80211_htrate	src/duration_calculation.c	/^float ieee80211_htrate(u_int8_t mcs_index, u_int8_t bandwidth, u_int8_t short_gi)$/;"	f
+ieee80211_radiotap_header	src/ieee80211_radiotap.h	/^struct ieee80211_radiotap_header {$/;"	s
+ieee80211_radiotap_iterator	src/cfg80211.h	/^struct ieee80211_radiotap_iterator {$/;"	s
+ieee80211_radiotap_iterator_init	src/radiotap.c	/^int ieee80211_radiotap_iterator_init($/;"	f
+ieee80211_radiotap_iterator_next	src/radiotap.c	/^int ieee80211_radiotap_iterator_next($/;"	f
+ieee80211_radiotap_namespace	src/cfg80211.h	/^struct ieee80211_radiotap_namespace {$/;"	s
+ieee80211_radiotap_type	src/ieee80211_radiotap.h	/^enum ieee80211_radiotap_type {$/;"	g
+ieee80211_radiotap_vendor_namespaces	src/cfg80211.h	/^struct ieee80211_radiotap_vendor_namespaces {$/;"	s
+ieee80211_vhtinfo	src/duration_calculation.c	/^static const struct mcs_vht_info ieee80211_vhtinfo[MAX_MCS_VHT_INDEX+1] = {$/;"	v	typeref:struct:mcs_vht_info	file:
+ieee80211_vhtrate	src/duration_calculation.c	/^static float ieee80211_vhtrate(u_int8_t mcs_index, u_int8_t bandwidth_index, u_int8_t short_gi)$/;"	f	file:
+ieee_802_11_fhss	src/ieee80211.h	/^struct ieee_802_11_fhss {$/;"	s
+ieee_802_11_phdr	src/ieee80211.h	/^struct ieee_802_11_phdr {$/;"	s
+ieee_802_11_phy_info	src/ieee80211.h	/^union ieee_802_11_phy_info {$/;"	u
+ieee_802_11a	src/ieee80211.h	/^struct ieee_802_11a {$/;"	s
+ieee_802_11ac	src/ieee80211.h	/^struct ieee_802_11ac {$/;"	s
+ieee_802_11ad	src/ieee80211.h	/^struct ieee_802_11ad {$/;"	s
+ieee_802_11b	src/ieee80211.h	/^struct ieee_802_11b {$/;"	s
+ieee_802_11g	src/ieee80211.h	/^struct ieee_802_11g {$/;"	s
+ieee_802_11n	src/ieee80211.h	/^struct ieee_802_11n {$/;"	s
+ifs	src/ieee80211.h	/^  int64_t ifs; \/* inter frame space in microseconds *\/$/;"	m	struct:wlan_radio
+in_ampdu	src/packet_analyzer.c	/^static u_int8_t in_ampdu(const struct ieee_802_11_phdr *phdr){$/;"	f	file:
+info_11_fhss	src/ieee80211.h	/^    struct ieee_802_11_fhss info_11_fhss;$/;"	m	union:ieee_802_11_phy_info	typeref:struct:ieee_802_11_phy_info::ieee_802_11_fhss
+info_11a	src/ieee80211.h	/^    struct ieee_802_11a info_11a;$/;"	m	union:ieee_802_11_phy_info	typeref:struct:ieee_802_11_phy_info::ieee_802_11a
+info_11ac	src/ieee80211.h	/^    struct ieee_802_11ac info_11ac;$/;"	m	union:ieee_802_11_phy_info	typeref:struct:ieee_802_11_phy_info::ieee_802_11ac
+info_11ad	src/ieee80211.h	/^    struct ieee_802_11ad info_11ad;$/;"	m	union:ieee_802_11_phy_info	typeref:struct:ieee_802_11_phy_info::ieee_802_11ad
+info_11b	src/ieee80211.h	/^    struct ieee_802_11b info_11b;$/;"	m	union:ieee_802_11_phy_info	typeref:struct:ieee_802_11_phy_info::ieee_802_11b
+info_11g	src/ieee80211.h	/^    struct ieee_802_11g info_11g;$/;"	m	union:ieee_802_11_phy_info	typeref:struct:ieee_802_11_phy_info::ieee_802_11g
+info_11n	src/ieee80211.h	/^    struct ieee_802_11n info_11n;$/;"	m	union:ieee_802_11_phy_info	typeref:struct:ieee_802_11_phy_info::ieee_802_11n
+is_first_frame	src/packet_analyzer.c	/^static u_int8_t is_first_frame = 1; \/* use to identify the first captured frame *\/$/;"	v	file:
+is_little_endian	src/endian_converter.c	/^u_int8_t is_little_endian(){$/;"	f
+is_radiotap_ns	src/cfg80211.h	/^	int is_radiotap_ns;$/;"	m	struct:ieee80211_radiotap_iterator
+is_second_subframe	src/packet_analyzer.c	/^static u_int8_t is_second_subframe = 0; \/* use to identify the second subframe$/;"	v	file:
+it_len	src/ieee80211_radiotap.h	/^	u_int16_t it_len;\/*		 length of the whole$/;"	m	struct:ieee80211_radiotap_header
+it_pad	src/ieee80211_radiotap.h	/^	u_int8_t it_pad;$/;"	m	struct:ieee80211_radiotap_header
+it_present	src/ieee80211_radiotap.h	/^	u_int32_t it_present;	\/* A bitmap telling which$/;"	m	struct:ieee80211_radiotap_header
+it_version	src/ieee80211_radiotap.h	/^	u_int8_t it_version;		 \/* Version 0. Only increases$/;"	m	struct:ieee80211_radiotap_header
+known	src/packet_analyzer.h	/^	u_int8_t known;			\/\/Known MCS information$/;"	m	struct:MCS_radiotap_header
+ldpc_extra_ofdm_symbol	src/ieee80211.h	/^    unsigned int    ldpc_extra_ofdm_symbol:1;$/;"	m	struct:ieee_802_11ac
+le2local16	src/endian_converter.c	/^u_int16_t le2local16(u_int16_t value){$/;"	f
+le2local32	src/endian_converter.c	/^u_int32_t le2local32(u_int32_t value){$/;"	f
+le2local64	src/endian_converter.c	/^u_int64_t le2local64(u_int64_t value){$/;"	f
+list_head	src/types.h	/^struct list_head {$/;"	s
+main	src/airtime_cal.c	/^int main(int argc, char *argv[]){$/;"	f
+mcs	src/ieee80211.h	/^    u_int8_t   mcs;            \/* MCS index *\/$/;"	m	struct:ieee_802_11ad
+mcs	src/ieee80211.h	/^    u_int8_t   mcs[4];         \/* MCS index per user *\/$/;"	m	struct:ieee_802_11ac
+mcs	src/packet_analyzer.h	/^	u_int8_t mcs;			\/\/MCS index$/;"	m	struct:MCS_radiotap_header
+mcs_index	src/ieee80211.h	/^    u_int16_t  mcs_index;      \/* MCS index *\/$/;"	m	struct:ieee_802_11n
+mcs_vht_info	src/duration_calculation.c	/^struct mcs_vht_info {$/;"	s	file:
+mode	src/ieee80211.h	/^    u_int32_t  mode;           \/* Various proprietary extensions *\/$/;"	m	struct:ieee_802_11g
+modulation	src/duration_calculation.c	/^  const char *modulation;$/;"	m	struct:mcs_vht_info	file:
+n_bits	src/cfg80211.h	/^	int n_bits;$/;"	m	struct:ieee80211_radiotap_namespace
+n_ns	src/cfg80211.h	/^	int n_ns;$/;"	m	struct:ieee80211_radiotap_vendor_namespaces
+nav	src/ieee80211.h	/^  u_int16_t nav;$/;"	m	struct:wlan_radio
+ness	src/ieee80211.h	/^    unsigned int    ness;           \/* Number of extension spatial streams *\/$/;"	m	struct:ieee_802_11n
+next	src/types.h	/^	struct hlist_node *next, **pprev;$/;"	m	struct:hlist_node	typeref:struct:hlist_node::hlist_node
+next	src/types.h	/^	struct list_head *next, *prev;$/;"	m	struct:list_head	typeref:struct:list_head::list_head
+noise_dbm	src/ieee80211.h	/^    int8_t    noise_dbm;                   \/* Noise level, in dBm *\/$/;"	m	struct:ieee_802_11_phdr
+noise_percent	src/ieee80211.h	/^    u_int8_t   noise_percent;               \/* Noise level, as a percentage *\/$/;"	m	struct:ieee_802_11_phdr
+ns	src/cfg80211.h	/^	const struct ieee80211_radiotap_namespace *ns;$/;"	m	struct:ieee80211_radiotap_vendor_namespaces	typeref:struct:ieee80211_radiotap_vendor_namespaces::ieee80211_radiotap_namespace
+nss	src/ieee80211.h	/^    u_int8_t   nss[4];         \/* NSS per user *\/$/;"	m	struct:ieee_802_11ac
+objects	src/Makefile	/^objects = airtime_cal.o radiotap.o endian_converter.o duration_calculation.o packet_analyzer.o$/;"	m
+oui	src/cfg80211.h	/^	uint32_t oui;$/;"	m	struct:ieee80211_radiotap_namespace
+partial_aid	src/ieee80211.h	/^    u_int16_t  partial_aid;$/;"	m	struct:ieee_802_11ac
+phy	src/ieee80211.h	/^    unsigned int    phy;              \/* PHY type *\/$/;"	m	struct:ieee_802_11_phdr
+phy	src/ieee80211.h	/^  unsigned int phy;$/;"	m	struct:aggregate
+phy	src/packet_analyzer.h	/^	unsigned int phy;$/;"	m	struct:previous_frame_info
+phy_info	src/ieee80211.h	/^    union ieee_802_11_phy_info phy_info;$/;"	m	struct:ieee_802_11_phdr	typeref:union:ieee_802_11_phdr::ieee_802_11_phy_info
+phy_info	src/ieee80211.h	/^  union ieee_802_11_phy_info phy_info;$/;"	m	struct:aggregate	typeref:union:aggregate::ieee_802_11_phy_info
+phy_info	src/packet_analyzer.h	/^	union ieee_802_11_phy_info phy_info;$/;"	m	struct:previous_frame_info	typeref:union:previous_frame_info::ieee_802_11_phy_info
+pkt_no	src/packet_analyzer.c	/^static unsigned int pkt_no = 0; \/* packet number *\/$/;"	v	file:
+pprev	src/types.h	/^	struct hlist_node *next, **pprev;$/;"	m	struct:hlist_node	typeref:struct:hlist_node::
+prev	src/types.h	/^	struct list_head *next, *prev;$/;"	m	struct:list_head	typeref:struct:list_head::
+prev_frame	src/packet_analyzer.c	/^static struct previous_frame_info prev_frame;$/;"	v	typeref:struct:previous_frame_info	file:
+prev_length	src/packet_analyzer.h	/^	unsigned int prev_length; $/;"	m	struct:previous_frame_info
+previous_frame_info	src/packet_analyzer.h	/^struct previous_frame_info {$/;"	s
+prior_aggregate_data	src/ieee80211.h	/^  unsigned int prior_aggregate_data; \/* length of all prior data in this aggregate$/;"	m	struct:wlan_radio
+put_unaligned_le16	src/le_byteshift.h	/^static inline void put_unaligned_le16(uint16_t val, void *p)$/;"	f
+put_unaligned_le32	src/le_byteshift.h	/^static inline void put_unaligned_le32(uint32_t val, void *p)$/;"	f
+put_unaligned_le64	src/le_byteshift.h	/^static inline void put_unaligned_le64(uint64_t val, void *p)$/;"	f
+radiotap_align_size	src/cfg80211.h	/^struct radiotap_align_size {$/;"	s
+radiotap_ns	src/radiotap.c	/^static const struct ieee80211_radiotap_namespace radiotap_ns = {$/;"	v	typeref:struct:ieee80211_radiotap_namespace	file:
+reference_num	src/packet_analyzer.h	/^	u_int32_t reference_num;$/;"	m	struct:A_MPDU_radiotap_header
+reserved	src/packet_analyzer.h	/^	u_int8_t reserved;$/;"	m	struct:A_MPDU_radiotap_header
+rssi	src/ieee80211.h	/^  int8_t rssi; \/* sometimes only available on the last frame *\/$/;"	m	struct:aggregate
+rssi	src/ieee80211.h	/^  int8_t rssi;$/;"	m	struct:wlan_radio
+rtap_namespace_sizes	src/radiotap.c	/^static const struct radiotap_align_size rtap_namespace_sizes[] = {$/;"	v	typeref:struct:radiotap_align_size	file:
+s16	src/types.h	/^typedef __s16 s16;$/;"	t
+s32	src/types.h	/^typedef __s32 s32;$/;"	t
+s64	src/types.h	/^typedef int64_t s64;$/;"	t
+s8	src/types.h	/^typedef __s8  s8;$/;"	t
+short_gi	src/ieee80211.h	/^    unsigned int    short_gi:1;     \/* True for short guard interval *\/$/;"	m	struct:ieee_802_11ac
+short_gi	src/ieee80211.h	/^    unsigned int    short_gi:1;     \/* True for short guard interval *\/$/;"	m	struct:ieee_802_11n
+short_gi_nsym_disambig	src/ieee80211.h	/^    unsigned int    short_gi_nsym_disambig:1;$/;"	m	struct:ieee_802_11ac
+short_preamble	src/ieee80211.h	/^    u_int8_t short_preamble:1; \/* Short preamble *\/$/;"	m	struct:ieee_802_11b
+short_preamble	src/ieee80211.h	/^    u_int8_t short_preamble; \/* Short preamble *\/$/;"	m	struct:ieee_802_11g
+signal_dbm	src/ieee80211.h	/^    int8_t    signal_dbm;                  \/* Signal level, in dBm *\/$/;"	m	struct:ieee_802_11_phdr
+signal_percent	src/ieee80211.h	/^    u_int8_t   signal_percent;              \/* Signal level, as a percentage *\/$/;"	m	struct:ieee_802_11_phdr
+size	src/cfg80211.h	/^	uint8_t align:4, size:4;$/;"	m	struct:radiotap_align_size
+start	src/packet_analyzer.h	/^	time_t start; \/\/time to start capturing$/;"	m	struct:arguments
+start_tsf	src/ieee80211.h	/^  u_int64_t start_tsf;$/;"	m	struct:wlan_radio
+stbc	src/ieee80211.h	/^    unsigned int    stbc:1;         \/* 1 if all spatial streams have STBC *\/$/;"	m	struct:ieee_802_11ac
+stbc_streams	src/ieee80211.h	/^    unsigned int    stbc_streams:2; \/* Number of STBC streams *\/$/;"	m	struct:ieee_802_11n
+subcarriers	src/duration_calculation.c	/^static const unsigned int subcarriers[4] = { 52, 108, 234, 468 };$/;"	v	file:
+subns	src/cfg80211.h	/^	uint8_t subns;$/;"	m	struct:ieee80211_radiotap_namespace
+swap_endian_16	src/endian_converter.c	/^u_int16_t swap_endian_16(u_int16_t value){$/;"	f
+swap_endian_32	src/endian_converter.c	/^u_int32_t swap_endian_32(u_int32_t value){$/;"	f
+swap_endian_64	src/endian_converter.c	/^u_int64_t swap_endian_64(u_int64_t value){$/;"	f
+this_arg	src/cfg80211.h	/^	unsigned char *this_arg;$/;"	m	struct:ieee80211_radiotap_iterator
+this_arg_index	src/cfg80211.h	/^	int this_arg_index;$/;"	m	struct:ieee80211_radiotap_iterator
+this_arg_size	src/cfg80211.h	/^	int this_arg_size;$/;"	m	struct:ieee80211_radiotap_iterator
+tsf_timestamp	src/ieee80211.h	/^    u_int64_t  tsf_timestamp;$/;"	m	struct:ieee_802_11_phdr
+tsf_timestamp	src/packet_analyzer.h	/^	u_int64_t tsf_timestamp;$/;"	m	struct:previous_frame_info
+turbo_type	src/ieee80211.h	/^    unsigned int    turbo_type:2;$/;"	m	struct:ieee_802_11a
+txop_ps_not_allowed	src/ieee80211.h	/^    unsigned int    txop_ps_not_allowed:1;$/;"	m	struct:ieee_802_11ac
+u16	src/types.h	/^typedef __u16 u16;$/;"	t
+u32	src/types.h	/^typedef __u32 u32;$/;"	t
+u64	src/types.h	/^typedef uint64_t u64;$/;"	t
+u8	src/types.h	/^typedef __u8  u8;$/;"	t
+wlan_radio	src/ieee80211.h	/^struct wlan_radio {$/;"	s
+zero_length_psdu_type	src/ieee80211.h	/^    u_int8_t   zero_length_psdu_type;       \/* type of zero-length PSDU *\/$/;"	m	struct:ieee_802_11_phdr

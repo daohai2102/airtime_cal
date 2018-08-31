@@ -35,8 +35,11 @@
 #ifndef IEEE80211RADIOTAP_H
 #define IEEE80211RADIOTAP_H
 
+#include <pcap.h>
+
 /* Base version of the radiotap packet header data */
 #define PKTHDR_RADIOTAP_VERSION		0
+
 
 /* A generic radio capture format is desirable. There is one for
  * Linux, but it is neither rigidly defined (there were not even
@@ -58,20 +61,20 @@
  * All data in the header is little endian on all platforms.
  */
 struct ieee80211_radiotap_header {
-	u8 it_version;		 /* Version 0. Only increases
+	u_int8_t it_version;		 /* Version 0. Only increases
 				 * for drastic changes,
 				 * introduction of compatible
 				 * new fields does not count.
 				 */
-	u8 it_pad;
+	u_int8_t it_pad;
 	//uint16_t it_len;
-	__be16 it_len;/*		 length of the whole
+	u_int16_t it_len;/*		 length of the whole
 				 * header in bytes, including
 				 * it_version, it_pad,
 				 * it_len, and data fields.
 				 */
 	//uint32_t it_present;
-	__be32 it_present;	/* A bitmap telling which
+	u_int32_t it_present;	/* A bitmap telling which
 				 * fields are present. Set bit 31
 				 * (0x80000000) to extend the
 				 * bitmap by another 32 bits.
