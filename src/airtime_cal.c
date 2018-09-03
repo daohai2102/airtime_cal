@@ -91,8 +91,8 @@ int main(int argc, char *argv[]){
 	pcap_dump_close(args.dumper);
 	pcap_close(handler);
 
-	fprintf(stderr,"final airtime: %f\n", args.airtime);
-	printf("%f\n", args.airtime);
+	fprintf(stderr,"final airtime: %u\n", args.airtime);
+	printf("%u\n", args.airtime);
 
 	return 0;
 }
