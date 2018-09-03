@@ -271,7 +271,7 @@ unsigned int calculate_duration(struct ieee_802_11_phdr *phdr,
 				stbc_streams = info_n->stbc_streams;
 			fprintf(stderr, "stbc_streams: %u\n", stbc_streams);
 
-			if (first_frame){
+			if (first_frame || !in_aggregate){
 				u_int8_t preamble = 32; /* assume HT-mixed */
 
 
