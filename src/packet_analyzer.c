@@ -356,8 +356,11 @@ void got_packet(u_char *argv, const struct pcap_pkthdr *header, const u_char *pa
 	prev_frame.phy_info = phdr.phy_info;
 	
 	time_t now = time(0);
-	if (now - args->start >= args->duration)
+	fprintf(stderr, "capture duration: %ld\n", now - args->start);
+	if (now - args->start >= args->duration){
+		fprintf(stderr, "BREAK LOOP\n");
 		pcap_breakloop(args->handler);
+	}
 }
 
 u_int8_t get_bit(u_int32_t value, u_int8_t bit){
