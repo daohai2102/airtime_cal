@@ -5,6 +5,8 @@
 #include <stdint.h>
 #include <string.h>
 #include <time.h>
+#include <signal.h>
+#include <unistd.h>
 #include "cfg80211.h" //radiotap parser
 #include "ieee80211_radiotap.h"
 #include "endian_converter.h"
@@ -44,18 +46,21 @@
 #define KNOWN_MCS_N_EXT_SPATIAL_STREAMS 6
 */
 
+pcap_t *handler = NULL;
 
+void alarm_handler(int sig){
+	pcap_breakloop(handler);
+}
 
 
 int main(int argc, char *argv[]){
 
-	struct arguments args = {.dumper = NULL, .airtime = 0, .duration = 0, .start = 0, .handler = NULL};
+	struct arguments args = {.dumper = NULL, .airtime = 0};
 	char *dev = argv[1];
 	char *filter_exp = argv[2];
-	args.duration = atoi(argv[3]);
+	unsigned int capture_duration = atoi(argv[3]);
 	char *file_save = argv[4];
 	char errbuf[PCAP_ERRBUF_SIZE]; //save error message when opening a device
-	pcap_t *handler;
 
 	//open handler to capture live packets
 	handler = pcap_open_live(dev, BUFSIZ, 0, 0, errbuf);
@@ -63,7 +68,6 @@ int main(int argc, char *argv[]){
 		fprintf(stderr,"err: %s\n", errbuf);
 		return 1;
 	}
-	args.handler = handler;
 
 	//set filter
 	struct bpf_program fp;
@@ -82,9 +86,9 @@ int main(int argc, char *argv[]){
 	//open file to write packets
 	args.dumper = pcap_dump_open(handler, file_save);
 
-	//start time
-	args.start = time(0);
-
+	//set alarm to stop capture after capture_duration seconds
+	alarm(capture_duration);
+	signal(SIGALRM, alarm_handler);
 	//loop through packets
 	pcap_loop(handler, 0, got_packet, (u_char*)&args);
 

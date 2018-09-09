@@ -25,9 +25,6 @@ struct MCS_radiotap_header {
 struct arguments{
 	pcap_dumper_t *dumper;
 	unsigned int airtime;
-	int duration; //duration to capture
-	time_t start; //time to start capturing
-	pcap_t *handler;
 };
 
 
